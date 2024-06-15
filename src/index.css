@@ -1,0 +1,51 @@
+:root {
+  --gray-000: #ffffff;
+  --gray-100: #e9e9e9;
+  --gray-200: #d2d2d2;
+  --gray-300: #bcbcbc;
+  --gray-400: #a5a5a5;
+  --gray-500: #8f8f8f;
+  --gray-600: #727272;
+  --gray-700: #565656;
+  --gray-800: #393939;
+  --gray-900: #1d1d1d;
+  --gray-1000: #000000;
+
+  --brand-100: #cce4ff;
+  --brand-200: #99c8ff;
+  --brand-300: #66adff;
+  --brand-400: #3391ff;
+  --brand-500: #0076ff;
+  --brand-600: #005ecc;
+  --brand-700: #004799;
+  --brand-800: #002f66;
+  --brand-900: #001833;
+
+  --positive-100: #ccffcc;
+  --positive-200: #99ff99;
+  --positive-300: #66ff66;
+  --positive-400: #33ff33;
+  --positive-500: #00ff00;
+  --positive-600: #00cc00;
+  --positive-700: #009900;
+  --positive-800: #006600;
+  --positive-900: #003300;
+}
+
+* {
+  font-family: 'SUIT', sans-serif;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
