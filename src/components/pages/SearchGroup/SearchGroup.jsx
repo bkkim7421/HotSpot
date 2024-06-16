@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Description, Btn } from '../../atomic';
 import Plus from '../../../assets/Plus.svg?react';
 import Search from '../../../assets/Search.svg?react';
-import { SearchGroupContainer, SearchBar, SearchBarInput, NewGroupBtnLink, TagContainer } from './style';
+import { SearchGroupContainer, SearchBar, SearchBarInput, NewGroupBtnLink, NewGroupBtn, TagContainer } from './style';
 import { sampleGroupListData } from './sampleGroupListData';
 import { sampleTagListData } from './sampleTagListData';
 import { GroupList } from '../../common/GroupList';
@@ -26,7 +26,7 @@ export function SearchGroup() {
   return (
     <SearchGroupContainer>
       <SearchBar>
-        <SearchBarInput placeholder='그룹 이름 검색' />
+        <SearchBarInput />
         <Search />
       </SearchBar>
       <TagContainer>
@@ -34,7 +34,7 @@ export function SearchGroup() {
           <Btn
             key={i}
             size={'small'}
-            backgroundcolor={
+            bgcolor={
               selectedTag === sampleTagListData[i]
                 ? 'var(--brand-300)'
                 : isHovering === sampleTagListData[i]
@@ -49,11 +49,11 @@ export function SearchGroup() {
           </Btn>
         ))}
       </TagContainer>
-      <NewGroupBtnLink to='/makegroup'>
-        <Btn size={'small'} backgroundcolor={'var(--brand-500)'} color={'white'}>
+      <NewGroupBtnLink>
+        <NewGroupBtn>
           <Plus />
           <Description>새 그룹</Description>
-        </Btn>
+        </NewGroupBtn>
       </NewGroupBtnLink>
       <GroupList groupListData={sampleGroupListData} colNum={3} />
     </SearchGroupContainer>

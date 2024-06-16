@@ -11,7 +11,7 @@ export const Btn = styled.div`
     cursor: pointer;
   }
 
-  ${(props) => props.backgroundcolor && `background-color: ${props.backgroundcolor}`};
+  ${(props) => props.bgcolor && `background-color: ${props.bgcolor}`};
   & div {
     ${(props) => props.color && `color: ${props.color}`};
   }

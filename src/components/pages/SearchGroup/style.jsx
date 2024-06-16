@@ -1,5 +1,6 @@
 import { styled } from 'styled-components';
-import { Row, Col, Wrap } from '../../atomic';
+import { Row, Col, Wrap, Btn } from '../../atomic';
+import { InputBox } from '../../common/InputBox';
 import { Link } from 'react-router-dom';
 
 export const SearchGroupContainer = styled(Col)`
@@ -19,29 +20,28 @@ export const SearchBar = styled(Row)`
   border-radius: 3rem;
 `;
 
-export const SearchBarInput = styled.input`
-  background-color: var(--gray-100);
-  border: 0;
-  outline: none;
+export const SearchBarInput = styled(InputBox).attrs({
+  placeholder: '그룹 이름 검색',
+  bgcolor: 'var(--gray-100)',
+  fontsize: '2rem',
+})`
   flex-grow: 1;
-  font-size: 2rem;
-  &::placeholder {
-    color: var(--gray-400);
-    font-size: 2rem;
-    font-family: 'SUIT', sans-serif;
-  }
 `;
 
-export const NewGroupBtnLink = styled(Link)`
+export const NewGroupBtnLink = styled(Link).attrs({ to: '/makegroup' })`
   align-self: end;
   transition: background-color 0.3s;
   text-decoration: none;
+`;
 
-  & > div {
-    gap: 1rem;
-    &:hover {
-      background-color: var(--brand-400);
-    }
+export const NewGroupBtn = styled(Btn).attrs({
+  size: 'small',
+  bgcolor: 'var(--brand-500)',
+  color: 'var(--gray-000)',
+})`
+  gap: 1rem;
+  &:hover {
+    background-color: var(--brand-400);
   }
 `;
 
