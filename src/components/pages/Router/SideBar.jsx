@@ -58,6 +58,7 @@ export function SideBar() {
 }
 
 const SideBarContainer = styled(Col)`
+  height: 100vh;
   flex-basis: 34rem;
   padding: 3rem 5rem;
   gap: 8rem;

@@ -8,6 +8,13 @@ export const GroupItemContainer = styled(Col)`
   padding: 3rem;
   gap: 2rem;
   width: calc((100% - 4rem) / 3);
+  cursor: pointer;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
+
   & div:first-child {
     gap: 1rem;
     & div {

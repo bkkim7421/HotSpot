@@ -6,10 +6,13 @@ export const ProfileBackground = styled.div`
   height: 41.6rem;
   background-image: url(${(props) => props.url});
   background-size: cover;
+  flex-shrink: 0;
 `;
 
 export const MyPageContainer = styled(Col)`
   flex-grow: 1;
+  height: 100vh;
+  overflow-y: auto;
   padding-bottom: 20rem;
 `;
 
@@ -41,6 +44,7 @@ export const ProfileImg = styled.div`
 `;
 
 export const InfoItemContainer = styled(Col)`
+  position: relative;
   flex-grow: 1;
   gap: 1rem;
   padding: 3rem;
