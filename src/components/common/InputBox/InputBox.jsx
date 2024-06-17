@@ -7,7 +7,14 @@ export const InputBox = styled.input`
   font-size: ${(props) => props.fontsize && `${props.fontsize}`};
   &::placeholder {
     color: var(--gray-400);
-    font-size: ${(props) => props.fontsize && `${props.fontsize}`};
+    font-size: ${(props) => props.fontsize && `${props.placeholdersize}`};
     font-family: 'SUIT', sans-serif;
+    transition: font-size 0.3s;
+  }
+
+  &:focus {
+    &::placeholder {
+      font-size: 70%;
+    }
   }
 `;
