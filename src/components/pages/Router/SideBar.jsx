@@ -46,7 +46,7 @@ export function SideBar() {
             <Header3>설정</Header3>
           </Option>
         </OptionLink>
-        <OptionLink to='/login'>
+        <OptionLink to='/signin'>
           <Option>
             <Logout />
             <Header3>로그아웃</Header3>

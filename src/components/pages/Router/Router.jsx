@@ -7,6 +7,7 @@ import { SignIn } from '../SignIn';
 import { MyPage } from '../MyPage';
 import { MakeGroup } from '../MakeGroup';
 import { SearchGroup } from '../SearchGroup';
+import { Home } from '../Home';
 
 function Layout() {
   return (
@@ -24,6 +25,7 @@ export function Router() {
         <Route path='/signin' element={<SignIn />}></Route>
         <Route path='/signup' element={<SignUp />}></Route>
         <Route path='/' element={<Layout />}>
+          <Route path='' element={<Home />}></Route>
           <Route path='mypage' element={<MyPage />}></Route>
           <Route path='makegroup' element={<MakeGroup />}></Route>
           <Route path='searchgroup' element={<SearchGroup />}></Route>

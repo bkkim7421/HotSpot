@@ -12,8 +12,9 @@ export const Btn = styled.div`
   }
 
   ${(props) => props.bgcolor && `background-color: ${props.bgcolor}`};
-  & div {
-    ${(props) => props.color && `color: ${props.color}`};
+  ${(props) => props.color && `color: ${props.color}`};
+  & * {
+    color: inherit;
   }
 
   ${(props) =>
