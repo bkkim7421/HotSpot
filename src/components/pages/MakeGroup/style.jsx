@@ -1,6 +1,7 @@
 import { styled } from 'styled-components';
-import { Col, Row } from '../../atomic';
+import { Col, Row, Btn } from '../../atomic';
 import { InputBox } from '../../common/InputBox';
+import { Link } from 'react-router-dom';
 
 export const MakeGroupContainer = styled(Col)`
   height: 100vh;
@@ -44,6 +45,28 @@ export const PeopleNumInput = styled(Row)`
     &::-webkit-outer-spin-button {
       -webkit-appearance: none;
       margin: 0;
+    }
+  }
+`;
+
+export const BtnContainer = styled(Row)`
+  gap: 3rem;
+  justify-content: center;
+  padding: 1rem;
+
+  & > a {
+    text-decoration: none;
+    &:first-child > div {
+      color: var(--gray-1000);
+      &:hover {
+        background-color: var(--gray-100);
+      }
+    }
+    &:last-child > div {
+      color: var(--gray-000);
+      &:hover {
+        background-color: var(--brand-400);
+      }
     }
   }
 `;

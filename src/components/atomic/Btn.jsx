@@ -21,12 +21,14 @@ export const Btn = styled.div`
       ? css`
           width: 62.6rem;
           border-radius: 3rem;
+          font-size: 3.2rem;
         `
       : props.size === 'medium'
       ? css`
           padding: 2rem 0;
           width: 25.6rem;
           border-radius: 4rem;
+          font-size: 3.2rem;
         `
       : props.size === 'small'
       ? css`
